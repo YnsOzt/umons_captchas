@@ -44,7 +44,7 @@ CUDA_VISIBLE_DEVICES=0 python3 train.py \
 --imgH 224 --imgW 224 --rgb \
 --early_stopping_param 'accuracy' --early_stopping_patience 20 \
 --freeze_FeatureExtraction \
---experiment_name ResNet32_Frozen
+--experiment_name ResNet32_Frozen \
 --ignore_x_vals 10
 ```
   * resnet_34_finetuned_pretrained_constrained :
