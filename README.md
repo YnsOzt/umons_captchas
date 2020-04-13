@@ -31,6 +31,14 @@ Download our dataset from [here](https://drive.google.com/open?id=1hBwTmuuWXRd5T
   <img src="./figures/test_set.png"/>
 </p>
 
+### Create your own dataset
+```
+python3 create_lmdb_dataset.py --inputPath path_to_image_folder --gtFile path_to_gt_file.txt --outputPath path_to_output_folder
+```
+* --inputPath: path to the folder containing the images
+* --path_to_gt_file: path to the alignment file which is in the following format: {imagepath}\t{label}\n
+* --outputPath: path of the output folder
+
 ## Our pretrained models
 Download pretrained model from [here](https://drive.google.com/open?id=1nTP0ZOm97qSKlr8RpZUXXpgKWMH7bSQt). You can get more information about the model used by reading [this](https://arxiv.org/abs/1904.01906) paper.
 
@@ -82,7 +90,7 @@ The drive link contains those models:
 </table>
 <br/>
 
-## Train and Test our models
+## Train and Test models
 
 ### Train
   * resnet_34_frozen_pretrained : 
@@ -111,7 +119,7 @@ CUDA_VISIBLE_DEVICES=0 python3 train.py \
 --ignore_x_vals 10
 ```
 
-### Test
+#### Test
 You should put all your images that you want to test in a 'your_image_folder/' then run:
 ```
 CUDA_VISIBLE_DEVICES=0 python3 demo.py \
@@ -141,3 +149,4 @@ Note: You have to use the same configuration as the model that you've trained !
 * --ignore_x_vals: number of iteration to skip before the first validation
 
 There are much more parameter available, check the train.py / test.py / demo.py files
+
