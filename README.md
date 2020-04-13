@@ -23,7 +23,7 @@ In the paper, expriments were performed with **PyTorch 0.4.1, CUDA 9.0**.
 pip3 install lmdb pillow torchvision nltk natsort
 ```
 
-### Download lmdb dataset for traininig, evaluation and test from [here](https://drive.google.com/open?id=1hBwTmuuWXRd5T7MxXXJHS_4qQqB6DXv0)
+### Download dataset from [here](https://drive.google.com/open?id=1hBwTmuuWXRd5T7MxXXJHS_4qQqB6DXv0)
 * raw_datasets contains:
   * train.txt / test.txt / val.txt which are the alignment of captchas with their respective labels
   * captchas which contains the train, test and validation catpchas
