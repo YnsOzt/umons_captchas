@@ -16,6 +16,7 @@ This is a slightly modified version of [deep-text-recognition-benchmark](https:/
 ## Download dataset from [here](https://drive.google.com/open?id=1hBwTmuuWXRd5T7MxXXJHS_4qQqB6DXv0)
 * raw_datasets contains:
   * train.txt / test.txt / val.txt which are the alignment of captchas with their respective labels
+  * train_letters.txt which contains the letters available in the training data
   * captchas which contains the train, test and validation catpchas
   
 * lmdb_datasets contains:
@@ -34,7 +35,7 @@ The drive link contains those models:
   * resnet_34_finetuned_pretrained_unconstrained_15k : model using PyTorch ResNet34 as the feature extractor with finetuned parameters and trained on an unconstrained dataset which contains 15k data
 
 ## Training our models from scratch
-  * resnet_34_frozen_pretrained_constrained : 
+  * resnet_34_frozen_pretrained : 
 ```
 CUDA_VISIBLE_DEVICES=0 python3 train.py \
 --train_data path_to_lmdb_train_folder --valid_data path_to_lmdb_validation_folder \
@@ -44,19 +45,19 @@ CUDA_VISIBLE_DEVICES=0 python3 train.py \
 --imgH 224 --imgW 224 --rgb \
 --early_stopping_param 'accuracy' --early_stopping_patience 20 \
 --freeze_FeatureExtraction \
---experiment_name ResNet32_Frozen \
+--experiment_name my_experiment \
 --ignore_x_vals 10
 ```
-  * resnet_34_finetuned_pretrained_constrained :
+  * resnet_34_finetuned_pretrained :
  ```
-test
+CUDA_VISIBLE_DEVICES=0 python3 train.py \
+--train_data path_to_lmdb_train_folder --valid_data path_to_lmdb_validation_folder \
+--select_data '/' --batch_ratio 1  --character "krosdgtupweavih lcmnbyzjxfq?,'!-.&" \
+--Transformation TPS --FeatureExtraction ResNet_PyTorch --SequenceModeling BiLSTM --Prediction Attn \
+--batch_size 64 --valInterval {79} \
+--imgH 224 --imgW 224 --rgb \
+--early_stopping_param 'accuracy' --early_stopping_patience 20 \
+--experiment_name my_experiment \
+--ignore_x_vals 10
 ```
-  * resnet_34_finetuned_pretrained_unconstrained_10k : 
-```
-test
-```
-  * resnet_34_finetuned_pretrained_unconstrained_15k :
-  
-```
-test
-```
+
