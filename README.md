@@ -69,10 +69,6 @@ CUDA_VISIBLE_DEVICES=0 python3 test.py \
 * `--saved_model`: assign saved model to evaluation.
 * `--benchmark_all_eval`: evaluate with 10 evaluation dataset versions, same with Table 1 in our paper.
 
-## Download failure cases and cleansed label from [here](https://drive.google.com/drive/folders/1W84gS9T5GU5l5Wp3VV1aeXIIKV87yjRm)
-image_release.zip contains failure case images and benchmark evaluation images with cleansed label.
-<img src="./figures/failure-case.jpg" width="1000" title="failure cases">
-
 ## When you need to train on your own dataset or Non-Latin language datasets.
 1. Create your own lmdb dataset.
 ```
