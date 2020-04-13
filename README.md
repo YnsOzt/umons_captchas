@@ -34,7 +34,7 @@ The drive link contains those models:
   * resnet_34_finetuned_pretrained_unconstrained_10k : model using PyTorch ResNet34 as the feature extractor with finetuned parameters and trained on an unconstrained dataset which contains 10k data
   * resnet_34_finetuned_pretrained_unconstrained_15k : model using PyTorch ResNet34 as the feature extractor with finetuned parameters and trained on an unconstrained dataset which contains 15k data
 
-## Training our models from scratch
+## Training and Testing our models
   * resnet_34_frozen_pretrained : 
 ```
 CUDA_VISIBLE_DEVICES=0 python3 train.py \
@@ -77,3 +77,5 @@ CUDA_VISIBLE_DEVICES=0 python3 train.py \
 * --early_stopping_param: early stopping parameter [accuracy|loss]
 * --early_stopping_patience: patience of early stopping
 * --ignore_x_vals: number of iteration to skip before the first validation
+
+There are much more parameter available, check the train.py / test.py / demo.py files
