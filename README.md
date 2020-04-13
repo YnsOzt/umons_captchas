@@ -13,7 +13,8 @@ This is a slightly modified version of [deep-text-recognition-benchmark](https:/
 }
 ```
 
-## Download dataset from [here](https://drive.google.com/open?id=1hBwTmuuWXRd5T7MxXXJHS_4qQqB6DXv0)
+## Dataset
+Download our dataset from [here](https://drive.google.com/open?id=1hBwTmuuWXRd5T7MxXXJHS_4qQqB6DXv0)
 * raw_datasets contains:
   * train.txt / test.txt / val.txt which are the alignment of captchas with their respective labels
   * train_letters.txt which contains the letters available in the training data
