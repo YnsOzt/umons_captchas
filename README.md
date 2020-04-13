@@ -13,16 +13,7 @@ This is a slightly modified version of [deep-text-recognition-benchmark](https:/
 }
 ```
 
-## Getting Started
-### Dependency
-- This work was tested with PyTorch 1.3.1, CUDA 10.1, python 3.6 and Ubuntu 16.04. <br> You may need `pip3 install torch==1.3.1`. <br>
-In the paper, expriments were performed with **PyTorch 0.4.1, CUDA 9.0**.
-- requirements : lmdb, pillow, torchvision, nltk, natsort
-```
-pip3 install lmdb pillow torchvision nltk natsort
-```
-
-### Download dataset from [here](https://drive.google.com/open?id=1hBwTmuuWXRd5T7MxXXJHS_4qQqB6DXv0)
+## Download dataset from [here](https://drive.google.com/open?id=1hBwTmuuWXRd5T7MxXXJHS_4qQqB6DXv0)
 * raw_datasets contains:
   * train.txt / test.txt / val.txt which are the alignment of captchas with their respective labels
   * captchas which contains the train, test and validation catpchas
@@ -32,7 +23,7 @@ pip3 install lmdb pillow torchvision nltk natsort
   * test_constrained which contains the ready to use test lmdb dataset
   * val_constrained which contains the ready to use validation lmdb dataset
 
-### Our pretrained models
+## Our pretrained models
 Download pretrained model from [here](https://drive.google.com/open?id=1nTP0ZOm97qSKlr8RpZUXXpgKWMH7bSQt)
 
 
