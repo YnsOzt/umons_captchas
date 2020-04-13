@@ -33,6 +33,47 @@ The drive link contains those models:
   * resnet_34_finetuned_pretrained_constrained : model using PyTorch ResNet34 as the feature extractor with finetuned parameters and trained on a constrained dataset
   * resnet_34_finetuned_pretrained_unconstrained_10k : model using PyTorch ResNet34 as the feature extractor with finetuned parameters and trained on an unconstrained dataset which contains 10k data
   * resnet_34_finetuned_pretrained_unconstrained_15k : model using PyTorch ResNet34 as the feature extractor with finetuned parameters and trained on an unconstrained dataset which contains 15k data
+  
+### Our results
+<table>
+<tr>
+  <th>Models</th>
+  <th>Total accuracy</th>
+  <th>One word accuracy</th>
+  <th>Two word + accuracy</th>
+</tr>
+<tr>
+  <th scope="row">TPS-ResNet-BiLSTM-Attn</th>
+  <td><center>5.80</center></td>
+  <td><center>9.56</center></td>
+  <td><center>0.0</center></td>
+</tr>
+<tr>
+  <th scope="row">resnet_34_frozen_pretrained_constrained</th>
+  <td><center>0</center></td>
+  <td><center>0</center></td>
+  <td><center>0</center></td>
+</tr>
+<tr>
+  <th scope="row">resnet_34_finetuned_pretrained_constrained</th>
+  <td><center>20.46</center></td>
+  <td><center>26.15</center></td>
+  <td><center>11.69</center></td>
+</tr>
+<tr>
+  <th scope="row">resnet_34_finetuned_pretrained_unconstrained_10k</th>
+  <td><center>29.66</center></td>
+  <td><center>40.32</center></td>
+  <td><center>13.22</center></td>
+</tr>
+<tr>
+  <th scope="row">resnet_34_finetuned_pretrained_unconstrained_15k</th>
+  <td><center>33.93</center></td>
+  <td><center>46.15</center></td>
+  <td><center>15.08</center></td>
+</tr>
+</table>
+<br/>
 
 ## Train and Test our models
 
@@ -65,7 +106,7 @@ CUDA_VISIBLE_DEVICES=0 python3 train.py \
 
 ### Test
 You should put all your images that you want to test in a 'your_image_folder/' then run:
- ```
+```
 CUDA_VISIBLE_DEVICES=0 python3 demo.py \
 --Transformation TPS --FeatureExtraction ResNet_PyTorch --SequenceModeling BiLSTM --Prediction Attn \
 --image_folder your_image_folder/ \
