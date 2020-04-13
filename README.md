@@ -61,3 +61,19 @@ CUDA_VISIBLE_DEVICES=0 python3 train.py \
 --ignore_x_vals 10
 ```
 
+### Parameters
+
+* --train_data: path to the lmdb folder containing the training data
+* --valid_data: path to the lmdb folder containing the validation data
+* --select_data: '/' for personnal dataset
+* --batch_ratio: 1 for personnal dataset
+* --character: string containing all the characters of your dataset
+* --Transformation: select Transformation module [None | TPS].
+* --FeatureExtraction: the feature extractor model  [VGG | RCNN | ResNet | ResNet_PyTorch]
+* --freeze_FeatureExtraction: Freeze the ResNet_PyTorch feature extractor's parameters
+* --valInterval: the number of iteration before each 
+* --imgH: height of your images
+* --imgW: width of your images
+* --early_stopping_param: early stopping parameter [accuracy|loss]
+* --early_stopping_patience: patience of early stopping
+* --ignore_x_vals: number of iteration to skip before the first validation
