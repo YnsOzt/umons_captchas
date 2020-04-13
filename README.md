@@ -35,13 +35,13 @@ pip3 install lmdb pillow torchvision nltk natsort
 
 ### Run demo with pretrained model
 1. Download pretrained model from [here](https://drive.google.com/open?id=1nTP0ZOm97qSKlr8RpZUXXpgKWMH7bSQt)
-2. Add image files to test into `demo_image/`
-3. Run demo.py (add `--sensitive` option if you use case-sensitive model)
+2. Add image files to test into `your_folder/`
+3. Run demo.py
 ```
 CUDA_VISIBLE_DEVICES=0 python3 demo.py \
 --Transformation TPS --FeatureExtraction ResNet --SequenceModeling BiLSTM --Prediction Attn \
---image_folder demo_image/ \
---saved_model TPS-ResNet-BiLSTM-Attn.pth
+--image_folder your_folder/ \
+--saved_model path_to_pretrained_model
 ```
 
 
