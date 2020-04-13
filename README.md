@@ -1,7 +1,6 @@
 ## Acknowledgements
 This is a slightly modified version of [deep-text-recognition-benchmark](https://github.com/clovaai/deep-text-recognition-benchmark)
 
-## Citation
 ```
 @inproceedings{baek2019STRcomparisons,
   title={What Is Wrong With Scene Text Recognition Model Comparisons? Dataset and Model Analysis},
