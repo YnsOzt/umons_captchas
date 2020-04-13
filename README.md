@@ -24,7 +24,7 @@ Download our dataset from [here](https://drive.google.com/open?id=1hBwTmuuWXRd5T
   * train_constrained which contains the ready to use training lmdb dataset
   * test_constrained which contains the ready to use test lmdb dataset
   * val_constrained which contains the ready to use validation lmdb dataset
-  
+### Datasets stats
 <p float="left">
   <img src="./figures/train_set.png" />
   <img src="./figures/val_set.png"/> 
