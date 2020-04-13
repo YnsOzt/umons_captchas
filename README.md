@@ -34,7 +34,8 @@ The drive link contains those models:
   * resnet_34_finetuned_pretrained_unconstrained_10k : model using PyTorch ResNet34 as the feature extractor with finetuned parameters and trained on an unconstrained dataset which contains 10k data
   * resnet_34_finetuned_pretrained_unconstrained_15k : model using PyTorch ResNet34 as the feature extractor with finetuned parameters and trained on an unconstrained dataset which contains 15k data
 
-## Training and Testing our models
+## Training and Test our models
+### Training
   * resnet_34_frozen_pretrained : 
 ```
 CUDA_VISIBLE_DEVICES=0 python3 train.py \
@@ -60,6 +61,18 @@ CUDA_VISIBLE_DEVICES=0 python3 train.py \
 --experiment_name my_experiment \
 --ignore_x_vals 10
 ```
+
+### Test
+You should put all your images that you want to test in a 'your_image_folder/' then run:
+ ```
+CUDA_VISIBLE_DEVICES=0 python3 demo.py \
+--Transformation TPS --FeatureExtraction ResNet_PyTorch --SequenceModeling BiLSTM --Prediction Attn \
+--image_folder your_image_folder/ \
+--character "krosdgtupweavih lcmnbyzjxfq?,'!-.&" \
+--imgH 224 --imgW 224 --rgb \
+--saved_model path_to_your_pretrained_model
+```
+Note: You have to use the same configuration as the model that you've trained !
 
 ### Parameters
 
