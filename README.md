@@ -34,7 +34,7 @@ pip3 install lmdb pillow torchvision nltk natsort
   * val_constrained which contains the ready to use validation lmdb dataset
 
 ### Run demo with pretrained model
-1. Download pretrained model from [here](https://drive.google.com/drive/folders/15WPsuPJDCzhp2SvYZLRj8mAlT3zmoAMW)
+1. Download pretrained model from [here](https://drive.google.com/open?id=1nTP0ZOm97qSKlr8RpZUXXpgKWMH7bSQt)
 2. Add image files to test into `demo_image/`
 3. Run demo.py (add `--sensitive` option if you use case-sensitive model)
 ```
