@@ -119,7 +119,7 @@ CUDA_VISIBLE_DEVICES=0 python3 train.py \
 --ignore_x_vals 10
 ```
 
-#### Test
+### Test
 You should put all your images that you want to test in a 'your_image_folder/' then run:
 ```
 CUDA_VISIBLE_DEVICES=0 python3 demo.py \
