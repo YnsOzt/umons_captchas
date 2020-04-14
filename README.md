@@ -42,7 +42,7 @@ python3 create_lmdb_dataset.py --inputPath path_to_image_folder --gtFile path_to
 ## Our pretrained models
 Download pretrained model from [here](https://drive.google.com/open?id=1nTP0ZOm97qSKlr8RpZUXXpgKWMH7bSQt). You can get more information about the model used by reading [this](https://arxiv.org/abs/1904.01906) paper.
 
-The drive link contains those models:
+The drive link contains those pretrained models:
   * TPS-ResNet-BiLSTM-Attn : full implementation of the model presented in the paper above
   * resnet_34_frozen_pretrained_constrained : model using PyTorch ResNet34 as the feature extractor with frozen parameters and trained on a constrained dataset
   * resnet_34_finetuned_pretrained_constrained : model using PyTorch ResNet34 as the feature extractor with finetuned parameters and trained on a constrained dataset
