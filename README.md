@@ -27,8 +27,8 @@ Download our dataset from [here](https://drive.google.com/open?id=1hBwTmuuWXRd5T
   
 * lmdb_datasets contains:
   * train_constrained which contains the ready to use training lmdb dataset
-  * train_unconstrained_10k which contains the ready to use unconstrained training lmdb dataset (10k captchas)
-  * train_unconstrained_15k which contains the ready to use unconstrained training lmdb dataset (15k captchas)
+  * train_unconstrained_10k which contains the ready to use 10k unconstrained training lmdb dataset
+  * train_unconstrained_15k which contains the ready to use 15k unconstrained training lmdb dataset
   * test_constrained which contains the ready to use test lmdb dataset
   * val_constrained which contains the ready to use validation lmdb dataset
   
