@@ -16,14 +16,22 @@ This is a slightly modified version of [deep-text-recognition-benchmark](https:/
 ## Dataset
 Download our dataset from [here](https://drive.google.com/open?id=1hBwTmuuWXRd5T7MxXXJHS_4qQqB6DXv0)
 * raw_datasets contains:
-  * train.txt / test.txt / val.txt which are the alignment of captchas with their respective labels
+  * train.txt / test.txt / val.txt which are the alignment of captchas (their filename) with their respective labels
+  * train_unconstrained_10k.txt which contains the alignment of 10k (5k unconstrained captchas merged with the contrained training set captchas) captchas for training with their respective labels.
+  * train_unconstrained_15k.txt which contains the alignment of 15k (10k unconstrained captchas merged with the contrained training set captchas) captchas for training with their respective labels.
   * train_letters.txt which contains the letters available in the training data
-  * captchas which contains the train, test and validation catpchas
+  * train_val folder which contains the training and validation catpchas
+  * unconstrained_train folder which contains the unconstrained training captchas
+  * test which folder which contains test captchas
+  * ood_test which contains the Out-Of-Domain test captchas
   
 * lmdb_datasets contains:
   * train_constrained which contains the ready to use training lmdb dataset
+  * train_unconstrained_10k which contains the ready to use unconstrained training lmdb dataset (10k captchas)
+  * train_unconstrained_15k which contains the ready to use unconstrained training lmdb dataset (15k captchas)
   * test_constrained which contains the ready to use test lmdb dataset
   * val_constrained which contains the ready to use validation lmdb dataset
+  
 ### Datasets stats
 <p float="left">
   <img src="./figures/train_set.png" />
