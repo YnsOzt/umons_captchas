@@ -90,6 +90,8 @@ The drive link contains those pretrained models:
 </table>
 <br/>
 
+Our models have 0% accuracy on the Out-Of-Domaine (OOD) daatset except for the 'TPS-ResNet-BiLSTM-Attn' model which is at 10.39% accuracy
+
 ## Train and Test models
 
 ### Train
