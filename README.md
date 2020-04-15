@@ -20,6 +20,7 @@ Download our dataset from [here](https://drive.google.com/open?id=1hBwTmuuWXRd5T
   * train_unconstrained_10k.txt which contains the alignment of 10k (5k unconstrained captchas merged with the contrained training set captchas) captchas for training with their respective labels.
   * train_unconstrained_15k.txt which contains the alignment of 15k (10k unconstrained captchas merged with the contrained training set captchas) captchas for training with their respective labels.
   * train_letters.txt which contains the letters available in the training data
+  * ood_gt.txt which are the alignment of captchas  with their respective labels for the Out-Of-Domain dataset
   * train_val folder which contains the training and validation catpchas
   * unconstrained_train folder which contains the unconstrained training captchas
   * test which folder which contains test captchas
