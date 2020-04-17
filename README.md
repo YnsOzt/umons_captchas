@@ -1,5 +1,5 @@
 ## Acknowledgements
-This is a slightly modified version of [deep-text-recognition-benchmark](https://github.com/clovaai/deep-text-recognition-benchmark)
+This repo is a slightly modified version of [deep-text-recognition-benchmark](https://github.com/clovaai/deep-text-recognition-benchmark)
 
 ```
 @inproceedings{baek2019STRcomparisons,
