@@ -70,8 +70,8 @@ The drive link contains those pretrained models:
 </tr>
 <tr>
   <th scope="row">TPS-ResNet-BiLSTM-Attn</th>
-  <td><center>5.80</center></td>
-  <td><center>9.56</center></td>
+  <td><center>8.38</center></td>
+  <td><center>14.53</center></td>
   <td><center>0.0</center></td>
 </tr>
 <tr>
@@ -82,21 +82,21 @@ The drive link contains those pretrained models:
 </tr>
 <tr>
   <th scope="row">resnet_34_finetuned_pretrained_constrained</th>
-  <td><center>20.46</center></td>
-  <td><center>26.15</center></td>
-  <td><center>11.69</center></td>
+  <td><center>49.61</center></td>
+  <td><center>58.22</center></td>
+  <td><center>37.84</center></td>
 </tr>
 <tr>
-  <th scope="row">resnet_34_finetuned_pretrained_unconstrained_10k</th>
-  <td><center>29.66</center></td>
-  <td><center>40.32</center></td>
-  <td><center>13.22</center></td>
+  <th scope="row">resnet_34_finetuned_pretrained_unconstrained_14k245</th>
+  <td><center>55.16</center></td>
+  <td><center>62.36</center></td>
+  <td><center>45.33</center></td>
 </tr>
 <tr>
-  <th scope="row">resnet_34_finetuned_pretrained_unconstrained_15k</th>
-  <td><center>33.93</center></td>
-  <td><center>46.15</center></td>
-  <td><center>15.08</center></td>
+  <th scope="row">resnet_34_finetuned_pretrained_unconstrained_19k245</th>
+  <td><center>55.72</center></td>
+  <td><center>63.81</center></td>
+  <td><center>39.94</center></td>
 </tr>
 </table>
 <br/>
