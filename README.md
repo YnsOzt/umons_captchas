@@ -35,11 +35,11 @@ Download our dataset from [here](https://drive.google.com/open?id=1hBwTmuuWXRd5T
   
 ### Datasets stats
 <p float="left">
-  <img src="./figures/train_set.png" />
+  <img src="./figures/train.png" />
   
-  <img src="./figures/val_set.png"/> 
+  <img src="./figures/val.png"/> 
   
-  <img src="./figures/test_set.png"/>
+  <img src="./figures/test.png"/>
 </p>
 
 ### Create your own dataset
