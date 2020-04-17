@@ -60,7 +60,7 @@ The drive link contains those pretrained models:
   * resnet_34_finetuned_pretrained_unconstrained_10k : model using PyTorch ResNet34 as the feature extractor with finetuned parameters and trained on an unconstrained dataset which contains 10k data
   * resnet_34_finetuned_pretrained_unconstrained_15k : model using PyTorch ResNet34 as the feature extractor with finetuned parameters and trained on an unconstrained dataset which contains 15k data
   
-### models results
+### models results on test set
 <table>
 <tr>
   <th>Models</th>
