@@ -14,24 +14,24 @@ This is a slightly modified version of [deep-text-recognition-benchmark](https:/
 ```
 
 ## Dataset
-Download our dataset from [here](https://drive.google.com/open?id=1hBwTmuuWXRd5T7MxXXJHS_4qQqB6DXv0)
+Download our dataset from [here](https://drive.google.com/open?id=18DzwCR3fLNpZEih1MfWqWXz1mXX3GrwS)
 * raw_datasets contains:
   * train.txt / test.txt / val.txt which are the alignment of captchas (their filename) with their respective labels
-  * train_unconstrained_10k.txt which contains the alignment of 10k (5k unconstrained captchas merged with the contrained training set captchas) captchas for training with their respective labels.
-  * train_unconstrained_15k.txt which contains the alignment of 15k (10k unconstrained captchas merged with the contrained training set captchas) captchas for training with their respective labels.
+  * train_unconstrained_14k245.txt which contains the alignment of 14k245 (5k unconstrained captchas merged with thr 9245 constrained training set captchas) captchas for training with their respective labels.
+  * train_unconstrained_19k245.txt which contains the alignment of 19k245 (10k unconstrained captchas merged the 9245 constrained training set captchas) captchas for training with their respective labels.
   * train_letters.txt which contains the letters available in the training data
-  * ood_gt.txt which are the alignment of captchas  with their respective labels for the Out-Of-Domain test set
-  * train_val folder which contains the training and validation catpchas
-  * unconstrained_train folder which contains the unconstrained training captchas
+  * ood_gts.txt which are the alignment of captchas  with their respective labels for the Out-Of-Domain test set
+  * train folder which contains the training
+  * val folder which contains the training
+  * train_unconstrained folder which contains the unconstrained training captchas
   * test which folder which contains test captchas
-  * ood_test which contains the Out-Of-Domain test captchas
+  * ood_captchas which contains the Out-Of-Domain test captchas
   
-* lmdb_datasets contains:
+* datasets_lmdb contains:
   * train_constrained which contains the ready to use training lmdb dataset
-  * train_unconstrained_10k which contains the ready to use 10k unconstrained training lmdb dataset
-  * train_unconstrained_15k which contains the ready to use 15k unconstrained training lmdb dataset
-  * test_constrained which contains the ready to use test lmdb dataset
-  * val_constrained which contains the ready to use validation lmdb dataset
+  * train_unconstrained_14k245 which contains the ready to use 14k245 unconstrained training lmdb dataset
+  * train_unconstrained_19k245 which contains the ready to use 19k245 unconstrained training lmdb dataset
+  * val which contains the ready to use validation lmdb dataset
   
 ### Datasets stats
 <p float="left">
