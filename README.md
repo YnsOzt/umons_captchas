@@ -27,7 +27,7 @@ Download our dataset from [here](https://drive.google.com/open?id=18DzwCR3fLNpZE
   * test which folder which contains test captchas
   * ood_captchas which contains the Out-Of-Domain test captchas
   
-* datasets_lmdb contains:
+* dataset_lmdb contains:
   * train_constrained which contains the ready to use training lmdb dataset
   * train_unconstrained_14k245 which contains the ready to use 14k245 unconstrained training lmdb dataset
   * train_unconstrained_19k245 which contains the ready to use 19k245 unconstrained training lmdb dataset
